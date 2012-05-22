@@ -1,0 +1,10 @@
+!!!
+html
+  head
+    title Inspect - Profile Report
+  body
+    h1 Inspect - Profile Report
+    - for (var method in report)
+      h2 #{method}
+      p Average: #{report[method].average }ms
+      p Standard Deviation: #{report[method].stdev }ms
